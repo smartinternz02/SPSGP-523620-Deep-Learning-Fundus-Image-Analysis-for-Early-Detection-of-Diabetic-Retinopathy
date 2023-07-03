@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diabetic Retinopathy Classification - Result</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Diabetic Retinopathy Classification - Result</h1>
+    <img class="result-img" src="{{ url_for('static', filename='images/' + img_filename) }}" alt="Result Image">
+    <div class="result-label">Prediction:</div>
+    <div class="result-value">{{ prediction }}</div>
+    <a class="btn" href="/">Back</a>
+  </div>
+</body>
+</html>
+
+
